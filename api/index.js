@@ -4,7 +4,6 @@ const bodyParser = require('body-parser')
 const cors = require('cors')({origin: true});
 const app = express();
 const db = require('./db')
-const recipeRouter = require('./routes/recipe-router')
 
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(cors)
@@ -15,8 +14,3 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 app.use('/', (req, res) => {
     return res.status(200).json({ success: true, message: "Hey"})
 })
-app.use('/api', recipeRouter)
-
-module.exports = app
-
-//exports.app = functions.https.onRequest(app);

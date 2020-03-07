@@ -1,4 +1,6 @@
 const Recipe = require('../models/recipe-model')
+const db = require('../db') //Need this here to establish the db connection
+db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 createRecipe = (req, res) => {
     const body = req.body

@@ -1,5 +1,5 @@
 {
-  "name": "functions",
+  "name": "mamamia_recipies",
   "description": "Cloud Functions for Firebase",
   "scripts": {
     "lint": "eslint .",
@@ -23,5 +23,17 @@
     "eslint-plugin-promise": "^4.0.1",
     "firebase-functions-test": "^0.1.6"
   },
-  "private": true
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TokiTheCurious/Mamamia_Recipe_Api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TokiTheCurious/Mamamia_Recipe_Api/issues"
+  },
+  "homepage": "https://github.com/TokiTheCurious/Mamamia_Recipe_Api#readme"
 }

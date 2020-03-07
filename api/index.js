@@ -12,6 +12,9 @@ app.use(bodyParser.json())
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
+app.use('/', (req, res) => {
+    return res.status(200).json({ success: true, message: "Hey"})
+})
 app.use('/api', recipeRouter)
 
 module.exports = app
